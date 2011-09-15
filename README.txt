@@ -1,3 +1,6 @@
+Note: HandbrakeCLI has to be installed.
+-----------------------------
+
 To automatically convert downloaded movies on complete.
 
 1. Ensure Downloads appear in Complete folder
@@ -11,3 +14,14 @@ To automatically convert downloaded movies on complete.
 4. Errors will be logged to /tmp/convert_log
 
 5. Woo.
+
+-------------------------
+
+To remove nothing tracks:
+
+./bin/remove_nothing.rb DIRECTORY
+
+To convert all movie files in a directory:
+
+./bin/handbrake.rb DIRECTORY
+

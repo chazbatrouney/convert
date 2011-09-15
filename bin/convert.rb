@@ -33,9 +33,9 @@ clean_dir(INPUT_DIR)
 
 puts "Converting files.."
 files.map do |f|
-  if f =~ /.(avi|mpg)$/
+  if f =~ /.(avi|mk4)$/
     convert_file(f)
-  elsif f =~ /.(m4v|mp4|mov)/
+  elsif f =~ /.(m4v|mp4|mov|mpg)/
     move_file(f, STAGING_DIR, VIDEO_DIR)
   elsif f =~ /.(mp3|m4a|aac)/
     move_file(f, STAGING_DIR, MUSIC_DIR)

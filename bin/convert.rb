@@ -7,7 +7,7 @@ VIDEO_DIR   = "#{DIR}/../Video"
 MUSIC_DIR   = "#{DIR}/../Music"
 OTHER_DIR   = "#{DIR}/../Other"
 
-HANDBRAKE = 'HandbrakeCLI -Z "Apple TV Custom"'
+HANDBRAKE = 'Resources/HandbrakeCLI -Z "Apple TV Custom"'
 MUX_MOVIE = 'Resources/muxmovie'
 NOTHING   = 'Resources/nothing.mov'
 

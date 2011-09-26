@@ -1,5 +1,10 @@
 #!/usr/bin/env ruby
 
+require File.expand_path(File.dirname(__FILE__) + '/convert_utils')
+require File.expand_path(File.dirname(__FILE__) + '/binaries')
+
+NOTHING = File.expand_path(File.dirname(__FILE__) + '/Resources/nothing.mov')
+
 DIR         = ARGV[0].sub /\/$/, ''
 INPUT_DIR   = "#{DIR}"
 STAGING_DIR = "#{DIR}/../Staging"
@@ -7,11 +12,6 @@ VIDEO_DIR   = "#{DIR}/../Video"
 MUSIC_DIR   = "#{DIR}/../Music"
 OTHER_DIR   = "#{DIR}/../Other"
 
-HANDBRAKE = 'Resources/HandbrakeCLI -Z "Apple TV Custom"'
-MUX_MOVIE = 'Resources/muxmovie'
-NOTHING   = 'Resources/nothing.mov'
-
-require 'convert_utils'
 
 puts
 puts "Conversion at " + Time.now.to_s

@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
 
+require File.expand_path(File.dirname(__FILE__) + '/binaries')
+
 INPUT_DIR = ARGV[0]
-HANDBRAKE = 'Resources/HandBrakeCLI -Z "Apple TV Custom"'
 
 Dir.glob("#{INPUT_DIR}/*.*").each do |in_file|
   next unless in_file =~ /\.(avi|mkv|mov)$/

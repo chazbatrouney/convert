@@ -9,7 +9,7 @@ Dir.glob("#{INPUT_DIR}/*.*").each do |in_file|
   
   out_file = in_file.sub($1, 'm4v')
    
-  command = "#{HANDBRAKE} -i '#{in_file}' -o '#{out_file}'"
+  command = "#{HANDBRAKE} -i \"#{in_file}\" -o \"#{out_file}\""
 
   puts command
   system command

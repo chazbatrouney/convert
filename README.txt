@@ -7,7 +7,7 @@ To automatically convert downloaded movies on complete.
 
 2. Copy bin/Complete.scpt to Folder Action Scripts directory
 	-	On Snow Leopard - ~/Library/Folder Action Scripts
-	-	On Lion - /Library/Folder Action Scripts
+	-	On Lion - /Library/Scripts/Folder Action Scripts
 
 3. Right click on the Complete Folder and attach the Complete action to it.
 
